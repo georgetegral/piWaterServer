@@ -59,7 +59,7 @@ function saveToDB($watered){
         $timestamp = date('Y-m-d H:i:s',$timestamp);
         $sql="INSERT INTO logs (time, watered) VALUES ('$timestamp', '$watered')";
         if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
+            //echo "New record created successfully";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
